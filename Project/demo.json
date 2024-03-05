@@ -1,0 +1,32 @@
+{
+  "users": {
+    "email1": [
+      {
+        "project_title": "Project 1",
+        "emp_name": "Nikhil",
+        "email": "nikhil@geeksforgeeks.org",
+        "job_profile": "Full Time"
+      },
+      {
+        "project_title": "Project 2",
+        "emp_name": "Nikhil",
+        "email": "nikhil@geeksforgeeks.org",
+        "job_profile": "Full Time"
+      }
+    ],
+    "email2": [
+      {
+        "project_title": "Project 3",
+        "emp_name": "Nikhil",
+        "email": "nikhil@geeksforgeeks.org",
+        "job_profile": "Full Time"
+      },
+      {
+        "project_title": "Project 4",
+        "emp_name": "Nikhil",
+        "email": "nikhil@geeksforgeeks.org",
+        "job_profile": "Full Time"
+      }
+    ]
+  }
+}

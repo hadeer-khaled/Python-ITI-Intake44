@@ -1,0 +1,29 @@
+{
+  "users_projecs": {
+    "hader@gmail.com": [
+      {
+        "title": "Project 1",
+        "details": "Nikhil",
+        "total_target": "nikhil@geeksforgeeks.org",
+        "start_date": "Full Time",
+        "end_date": "Full Time"
+      },
+      {
+        "title": "Project 2",
+        "details": "Nikhil",
+        "total_target": "nikhil@geeksforgeeks.org",
+        "start_date": "Full Time",
+        "end_date": "Full Time"
+      }
+    ],
+    "rahma@gmail.com": [
+      {
+        "title": "Project 2",
+        "details": "Nikhil",
+        "total_target": "nikhil@geeksforgeeks.org",
+        "start_date": "Full Time",
+        "end_date": "Full Time"
+      }
+    ]
+  }
+}
