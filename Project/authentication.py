@@ -1,5 +1,5 @@
 import pandas as pd
-from file_manipulation import create_users_info_csv ,  add_user_info
+from user_services import  add_user_info ,phone_number_validator
 from projects import project_manipulation
 
 filename = "users_info.csv"
@@ -12,18 +12,20 @@ def register():
     password = input("password: ")
     repassword = input("password: ")
     while password != repassword:
-        print("Password dosn't match")
+        print("Password doesn't match")
         password = input("password: ")
-        repassword = input("password: ")
+        repassword = input("Re-type your password: ")
     phone = input("phone: ")
+    while not phone_number_validator(phone):
+        print("Invalid Phone numer. Please try again")
+        phone = input("phone: ")
+        
     user_info = [first_name, last_name, email, password , phone]
     add_user_info( user_info,filename)
 
     print("Congratulations, You registered Successfully!")
     print("Now You can log in")
     login()
-
-    return  0
 
 def login():
     email = input("Please enter your email: ")

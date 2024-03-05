@@ -1,6 +1,7 @@
 import csv
 import pandas as pd
 import json
+from datetime import datetime
 
 
         
@@ -79,8 +80,11 @@ def get_project_by_email_and_title(filename , email, title):
              matching_project = project
 
     return matching_project , all_projects_data
+    
 
-# filename = "projects.json"
-# email= "hader@gmail.com"
-# title = "Project 1"
-# get_project_by_email_and_title(filename , email, title)
+def date_validator(date_str, format_str="%d-%m-%Y"):
+    try:
+        datetime.strptime(date_str, format_str)
+        return True
+    except ValueError:
+        return False
