@@ -1,5 +1,6 @@
 import pandas as pd
 from file_manipulation import create_users_info_csv ,  add_user_info
+from projects import project_manipulation
 
 filename = "users_info.csv"
 users_df = pd.read_csv(filename)
@@ -35,6 +36,7 @@ def login():
         entered_password = password.strip()
         if stored_password == entered_password:
              print("Congratulations, You logged in Successfully!")
+             project_manipulation(email)
         else:
             print("Invalid password.")
     else:
